@@ -2,16 +2,23 @@
 {
     public class Room
     {
-        private string description;
-
-        public Room(string description)
+        private string Description;
+        public string Item;
+        
+        public Room(string Description, string Item)
         {
-            this.description = description;
+            this.Description = Description;
+            this.Item = Item;
         }
 
-        public string GetDescription()
+        public string GetDescription() // Returns the rooms description
         {
-            return description;
+            return Description;
+        }
+    
+        public string GetItem() // Returns the rooms item
+        {
+            return Item;
         }
     }
 }
